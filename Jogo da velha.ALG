@@ -1,6 +1,6 @@
-Algoritmo "AULA 15.6"
+Algoritmo "Jogo da velha"
 //
-// Descrição   : Jogo da velha
+// DescriÃ§Ã£o   : Jogo da velha
 // Autor(a)    : Jhon
 // Data atual  : 25/1/2022
 
@@ -13,18 +13,18 @@ Var
    P,X,O,STX,STO,DV,SV,FA:inteiro
    fv,ov,VX,VO,RF:caractere
    
-//validador de campeão
+//validador de campeÃ£o
 funcao campeao():caractere
 
 inicio
    se(STX=30)entao
      escreval()
-     escreval("Fim de jogo!!! Parabéns jogador do 'X'!!!")
+     escreval("Fim de jogo!!! ParabÃ©ns jogador do 'X'!!!")
      interrompa
    senao
      se(STO=90) entao
        escreval()
-       escreval("Fim de jogo!!! Parabéns jogador do 'O'!!!")
+       escreval("Fim de jogo!!! ParabÃ©ns jogador do 'O'!!!")
        interrompa
      fimse
    fimse
@@ -99,7 +99,7 @@ Inicio
    escreval("|---------------------|")
    escreval("|---------------------|")
    escreval()
-   escreva("Digite sua opção: ")
+   escreva("Digite sua opÃ§Ã£o: ")
    leia(P)
    
 ////////////////////////////////////////////////////////////
@@ -361,7 +361,7 @@ Inicio
          interrompa
        fimse
 
-       //1ª linha
+       //1Âª linha
        se (J[3,1]="3") e (sx[1,1]+sx[2,1]=20)entao
          J[3,1]<-"O"
          so[3,1]<-30
@@ -380,7 +380,7 @@ Inicio
              ov<-velha()
              SV<-SV+1
            senao
-             //2ª linha
+             //2Âª linha
              se (J[3,2]="6") e (sx[1,2]+sx[2,2]=20)entao
                J[3,2]<-"O"
                so[3,2]<-30
@@ -399,7 +399,7 @@ Inicio
                    ov<-velha()
                    SV<-SV+1
                  senao
-                   //3ª linha
+                   //3Âª linha
                    se (J[3,3]="9") e (sx[1,3]+sx[2,3]=20)entao
                      J[3,3]<-"O"
                      so[3,3]<-30
@@ -418,7 +418,7 @@ Inicio
                          ov<-velha()
                          SV<-SV+1
                        senao
-                         //1ª diagonal
+                         //1Âª diagonal
                          se (J[3,3]="9") e (sx[1,1]+sx[2,2]=20)entao
                            J[3,3]<-"O"
                            so[3,3]<-30
@@ -437,7 +437,7 @@ Inicio
                                ov<-velha()
                                SV<-SV+1
                              senao
-                               //2ª diagonal
+                               //2Âª diagonal
                                se (J[1,3]="7") e (sx[3,1]+sx[2,2]=20)entao
                                  J[1,3]<-"O"
                                  so[1,3]<-30
@@ -456,7 +456,7 @@ Inicio
                                      ov<-velha()
                                      SV<-SV+1
                                    senao
-                                     //1ª coluna
+                                     //1Âª coluna
                                      se (J[1,3]="7") e (sx[1,1]+sx[1,2]=20)entao
                                        J[1,3]<-"O"
                                        so[1,3]<-30
@@ -475,7 +475,7 @@ Inicio
                                            ov<-velha()
                                            SV<-SV+1
                                          senao
-                                           //2ª coluna
+                                           //2Âª coluna
                                            se (J[2,3]="8") e (sx[2,1]+sx[2,2]=20)entao
                                              J[2,3]<-"O"
                                              so[2,3]<-30
@@ -494,7 +494,7 @@ Inicio
                                                  ov<-velha()
                                                  SV<-SV+1
                                                senao
-                                                 //3ª coluna
+                                                 //3Âª coluna
                                                  se (J[3,3]="9") e (sx[3,1]+sx[3,2]=20)entao
                                                    J[3,3]<-"O"
                                                    so[3,3]<-30
@@ -513,7 +513,7 @@ Inicio
                                                        ov<-velha()
                                                        SV<-SV+1
                                                      senao
-                                                       //Jogadas aleatórias
+                                                       //Jogadas aleatÃ³rias
                                                        repita
                                                          FA<-1
                                                          O<-0
